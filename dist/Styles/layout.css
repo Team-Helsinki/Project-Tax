@@ -3,8 +3,9 @@ body{
     flex-flow: column;
     padding: 0;
     margin: 0;
-    color: antiquewhite;
+    color: white;
     font-family: 'Raleway', sans-serif;
+
 }
 .header-section{
     display: flex;
@@ -13,18 +14,21 @@ body{
     border: none;
     padding: 0;
     margin: 0;
-    background-color: darkgreen;
-    color: antiquewhite;
+    background-color: white;
+    color: white;
 }
 .top-nav{
     display: flex;
     flex: 1;
     justify-content: flex-end;
+    background-color: rgb(66, 62, 62);
+
 }
 .top-nav-link{
     display: flex;
     align-items: baseline;
     list-style: none;
+
 }
 .top-nav-link li{
     padding: 10px;
@@ -32,22 +36,27 @@ body{
 .logo-section{
     display: flex;
     flex: 2;
-    justify-content: center;
+    justify-content: left;
+    padding: 0px 50px 0px 50px;
 }
 .main-nav{
     flex: 3;
     justify-content: center;
+    background-color: green;
+    
 }
 .main-nav-link{
 	list-style: none;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 20px 350px 20px 350px;
 
 }
 a{
     text-decoration: none;
-    color: antiquewhite;
+    color: white;
 }
 .intro-section{
     background-image: url(https://res.cloudinary.com/dcczd9zz5/image/upload/v1567175521/Main_Banner_1920_b59vis.jpg);
@@ -67,3 +76,69 @@ a{
 .footer-section li{
     list-style: none;
 }
+
+
+    
+
+.form-container{
+    display: block;
+    margin: 50px 35% 40px 35%;
+    color:green;
+    box-shadow: 5px 5px 5px 5px rgb(187, 206, 206);
+    padding: 30px 30px 30px 30px;
+    border-radius: 5px;
+}
+  
+
+  input[type=text], input[type=password] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width:100%;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:100%;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+
+  .h3login{
+      text-align: center;
+  }
+
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 50%;
+    }
+  }
