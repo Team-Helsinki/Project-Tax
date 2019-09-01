@@ -153,7 +153,7 @@ a{
   }
   
   .about-section p{
-    text-align:center;
+    text-align:justify;
     margin-bottom: 5rem;
   }
 
@@ -179,8 +179,25 @@ a{
     border-radius: 50%;
   }
   .member p{
-    color: black
+    color: black;
   }
+
+  .member-name{
+    font-weight: bold;
+  }
+
+  .member-role{
+    font-style: italic;
+  }
+
+  .member-name{
+    font-weight: bold;
+  }
+
+  .member-role{
+    font-style: italic;
+  }
+
   /* Change styles for span and cancel button on extra small screens */
   @media screen and (max-width: 300px) {
     span.psw {
