@@ -29,99 +29,83 @@
             </div>
     </div>
     <div class="intro-section blur"></div>
-    <form action="">
-        <div class="form-container register">
-
-                <h3 class="h3login">Register</h3>
-                <div>
-                    <label for="Name"><b>Full Name</b></label>
-                    <div>
-                        <input type="text" placeholder="Enter Full Name" name="full_name" required>
-                    </div>
-                    
-                </div>
-            
-                <div>
-                    <label for="email"><b>Email</b></label>
-                    <div>
-                        <input type="email" placeholder="Enter Email" name="email" required>
-                    </div>
-                </div>
-                <div>
-                    <label for="phone"><b>Phone Number</b></label>
-                    <div>
-                        <input type="text" placeholder="Enter Phone Number" name="phone" required>
-                    </div>
-                </div>
-                <div>
-                    <label for="password"><b>Password</b></label>
-                    <div>
-                        <input type="password" placeholder="Enter Password" name="password" required>
-                    </div>
-                </div>
-                <div>
-                    <label for="password"><b>Confirm Password</b></label>
-                    <div>
-                        <input type="password" placeholder="Enter Password Again" name="password_confirm" required>
-                    </div>
-                </div>
-            
-                <button type="submit">Login</button>
-
-                <div>
-                    <label>
-                        <p class="message">Already have an account? <a class="dynamic-link" href="login.html">Sign in!</a></p>
-                    </label>
-                </div>
-                
-                <div>
-                    <button type="button" class="cancelbtn">Cancel</button>
-                </div>
-        
-        </div>
-      
-       
-    </form>
-
-    <div class="footer-section">
-            <div style="margin: 30px;">
-                <div>
-                    <h3>Contact Us</h3>
-                    <p>
-                        <span>block 6, 36 Adeboye Street, Lagos, Nigeria.</span><br>
-                        <span>Support: +234814-7657436, +234701-4360123</span><br>
-                        <span>mail to info@taxi.comt</span><br>
-                        <span>Lorem Ipsum</span>
-                    </p>
-                </div>
-                <div>
-                    <ul>
-                        <li><a>About us</a></li>
-                        <li><a>Features</a></li>
-                        <li><a>TaxIt.ng Mobile</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><a>Pricing</a></li>
-                        <li><a>Lorem and Lorem</a></li>
-                        <li><a>Ipsum Lorem</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><a>Support and FAQs</a></li>
-                        <li><a>Terms and Conditions</a></li>
-                        <li><a>Privacy Policy</a></li>
-                        <li><a>Lorem Ipsum</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr style="margin:0px 50px;">
-            <div>
-                <p>Copyright © 2019 Team Helsinki. All Rights Reserved | TaxIt.ng is a platform designed & developed by Team Helsinki.</p>
-            </div>
-        </div>
-        
+    <div class="form-section">
+       <!-- multistep form -->
+        <form id="msform">
+         <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active">Account Setup</li>
+                <li>Social Profiles</li>
+                <li>Personal Details</li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">Create your account</h2>
+                <h3 class="fs-subtitle">This is step 1</h3>
+                <input type="text" name="email" placeholder="Email" />
+                <input type="password" name="pass" placeholder="Password" />
+                <input type="password" name="cpass" placeholder="Confirm Password" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Social Profiles</h2>
+                <h3 class="fs-subtitle">Your presence on the social network</h3>
+                <input type="text" name="twitter" placeholder="Twitter" />
+                <input type="text" name="facebook" placeholder="Facebook" />
+                <input type="text" name="gplus" placeholder="Google Plus" />
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Personal Details</h2>
+                <h3 class="fs-subtitle">We will never sell it</h3>
+                <input type="text" name="fname" placeholder="First Name" />
+                <input type="text" name="lname" placeholder="Last Name" />
+                <input type="text" name="phone" placeholder="Phone" />
+                <textarea name="address" placeholder="Address"></textarea>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="submit" name="submit" class="submit action-button" value="Submit" />
+            </fieldset>
+        </form>
+   </div>
+   <div class="footer-section">
+       <div style="margin: 30px;">
+           <div>
+               <h3>Contact Us</h3>
+               <p>
+                   <span>block 6, 36 Adeboye Street, Lagos, Nigeria.</span><br>
+                   <span>Support: +234814-7657436, +234701-4360123</span><br>
+                   <span>mail to info@taxi.comt</span><br>
+                   <span>Lorem Ipsum</span>
+               </p>
+           </div>
+           <div>
+               <ul>
+                   <li><a>About us</a></li>
+                   <li><a>Features</a></li>
+                   <li><a>TaxIt.ng Mobile</a></li>
+               </ul>
+           </div>
+           <div>
+               <ul>
+                   <li><a>Pricing</a></li>
+                   <li><a>Lorem and Lorem</a></li>
+                   <li><a>Ipsum Lorem</a></li>
+               </ul>
+           </div>
+           <div>
+               <ul>
+                   <li><a>Support and FAQs</a></li>
+                   <li><a>Terms and Conditions</a></li>
+                   <li><a>Privacy Policy</a></li>
+                   <li><a>Lorem Ipsum</a></li>
+               </ul>
+           </div>
+       </div>
+       <hr style="margin:0px 50px;">
+       <div>
+           <p>Copyright © 2019 Team Helsinki. All Rights Reserved | TaxIt.ng is a platform designed & developed by Team Helsinki.</p>
+       </div>
+   </div>
 </body>
 </html>
