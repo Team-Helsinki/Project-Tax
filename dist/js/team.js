@@ -3,7 +3,7 @@ const members = [
     id: "shn00559",
     name: "Abdulhafiz Ahmed",
     role: "Backend", 
-    image: "https://res.cloudinary.com/rexdavinci/image/upload/v1566555418/IMG_20190817_193234.jpg"
+    image: "https://res.cloudinary.com/rexdavinci/image/upload/v1567307411/Abdulhafiz.jpg"
   },
   {
     id: "shn00546",
@@ -133,7 +133,12 @@ function createImage(member){
   function generateTeam() {
   let teamMembers = document.getElementById("team-members")
   return members.map(member=>{
-    teamMembers.appendChild(createMember(member))
+    let image = member.image
+    console.log(image)
+    // If member image exists on cloudinary
+    if(image.indexOf("res.cloudinary.com") > 1){
+      teamMembers.appendChild(createMember(member))
+    }
   }) 
 }
 
@@ -146,7 +151,9 @@ function createMember(member){
   divElement.className = "member"
   divElement.appendChild(createImage(member))
   nameElement.appendChild(nameContent)
+  nameElement.className = "member-name"
   roleElement.appendChild(roleContent)
+  roleElement.className = "member-role"
   divElement.appendChild(nameElement)
   divElement.appendChild(roleElement)
   return divElement
