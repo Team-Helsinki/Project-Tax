@@ -52,6 +52,8 @@ a{
 .intro-section{
     background-image: url(https://res.cloudinary.com/dcczd9zz5/image/upload/v1567175521/Main_Banner_1920_b59vis.jpg);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 90vh;
 }
 .footer-section{
@@ -143,15 +145,21 @@ a{
   .about-section{
     color: rgb(68, 51, 51);
     width: 80%;
-    margin: auto auto;
+    margin: auto auto 4% auto;
     padding: 1rem 0.5rem 0.5rem 1rem;
   }
   .about-section h2, h3 {
     text-align: center;
   }
+
+  #mission {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+  }
   
   .about-section p{
-    text-align:center;
+    text-align:justify;
     margin-bottom: 5rem;
   }
 
@@ -177,8 +185,25 @@ a{
     border-radius: 50%;
   }
   .member p{
-    color: black
+    color: black;
   }
+
+  .member-name{
+    font-weight: bold;
+  }
+
+  .member-role{
+    font-style: italic;
+  }
+
+  .member-name{
+    font-weight: bold;
+  }
+
+  .member-role{
+    font-style: italic;
+  }
+
   /* Change styles for span and cancel button on extra small screens */
   @media screen and (max-width: 300px) {
     span.psw {
@@ -190,14 +215,12 @@ a{
     }
   }
 
-  #mission {
-    font-weight: bold;
-    font-style: italic;
-  }
+
 
   .tax-photo {
-    width: 60%;
-    height: 58%;
-    align-self: center;
-    padding-left:20%;
+    display: block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 1.5rem auto;
   }
