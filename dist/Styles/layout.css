@@ -1,70 +1,150 @@
-body{
-    display: flex;
-    flex-flow: column;
+* {
     padding: 0;
     margin: 0;
-    color: antiquewhite;
-    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
-.header-section{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    border: none;
-    padding: 0;
-    margin: 0;
-    background-color: darkgreen;
-    color: antiquewhite;
-}
-.top-nav{
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-}
-.top-nav-link{
-    display: flex;
-    align-items: baseline;
-    list-style: none;
-}
-.top-nav-link li{
-    padding: 10px;
-}
-.logo-section{
-    display: flex;
-    flex: 2;
-    justify-content: center;
-}
-.main-nav{
-    flex: 3;
-    justify-content: center;
-}
-.main-nav-link{
-	list-style: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
 
+body{
+    font-family: 'Roboto Slab', serif;
 }
-a{
+
+.header {
+    background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.801), rgba(126, 213, 111, 0.801) ),  url(https://res.cloudinary.com/notapreneur/image/upload/v1567359744/michael-nandong-AWxWjmNSoNU-unsplash_cg2hom.jpg);
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+}
+
+.menu-area li a{
+   text-decoration: none;
+   color: #fff;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   display: block;
+   padding: 0 40px;
+   font-size: 20px;
+   line-height: 30px;
+   position: relative;
+   z-index: 1;
+}
+
+.menu-area li a:hover {
+    background: tomato;
+    color: #fff;
+}
+
+.menu-area li{
+   list-style: none;
+   display: inline-block;
+}
+
+.custom-padding {
+    padding-top: 25px;
+}
+
+nav {
+    position: relative;
+    padding: 10px 20px 10px 10px;
+    text-align: right;
+    z-index: 1;
+    /*background: #1a1b1f;*/
+    margin: 0 auto;
+    width: calc(100% - 60px);
+}
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative;
+  font-size: 16px;
+  background-color: #ff3041;
+  color: #1a1b1f;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.logo img {
+  width: 8%;
+  float: left;
+  padding-left: 2%;
+  padding-top: 0;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 300px;
+}
+
+.footer a {
     text-decoration: none;
-    color: antiquewhite;
+    color: #fff;
 }
-.intro-section{
-    background-image: url(https://res.cloudinary.com/dcczd9zz5/image/upload/v1567175521/Main_Banner_1920_b59vis.jpg);
-    background-position: center;
-    height: 90vh;
+
+.intro-section {
+    padding: 150px 100px;   
 }
-.footer-section{
-    background-color: darkgreen;
+
+.headline-main {
+    font-weight: 900;
+    font-size: 100px;
+    color: #fff;
+    padding-bottom: 10px;
 }
-.footer-section > div{
-    display: flex;
-	flex-direction: row;
-    justify-content: space-around;
-    padding-top: 30px;
-    line-height: 1.5em;
+
+.headline-sub {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 40px;
 }
-.footer-section li{
+
+#footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 200px;
+    background-color: #1a1b1f;
+    color: #fff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  line-height: 1.5em;
+  
+}
+
+.footer-contact-us {
+  display: inline-block;
+}
+
+.footer-about-us {
+  display: inline-block;
+  padding-top: 0;
+}
+
+.footer-pricing {
+  display: inline-block;
+}
+
+.footer-support {
+  display: inline-block;
+}
+
+
+#footer li{
     list-style: none;
 }
 
