@@ -14,7 +14,9 @@
        <div class="top-nav">
            <ul class="top-nav-link">
                <li><i class="fas fa-sign-in-alt"></i><a href="login.html">Sign In</a></li>
-               <li><i class="fas fa-user-plus"></i><a href="#">Register</a></li>
+
+               <li><i class="fas fa-user-plus"></i><a href="register.html">Register</a></li>
+              
            </ul>
        </div>
        <div class="logo-section">
@@ -22,20 +24,90 @@
         </div>
         <div class="main-nav">
             <ul class="main-nav-link">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li>Fund Projects</li>
-                <li>Team</li>
+
+                <li><a href="index.html"><span class="fas fa-home" ></span>&nbsp;Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#"><span class="fas fa-phone"></span>&nbsp;Contact Us</a></li>
+                <li><a href="#">Fund Projects</a></li>
+                <li><a href="">Team</a></li>
             </ul>
         </div>
    </div>
    <div class="intro-section">
-        <div>
-            <h1>Best Way to pay Tax</h1>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div>
+              <h3>We deliver considered branding products that evoke engaging emotional responses. Innovative thinking and attention to detail are the hallmark of our craft.</h3>
+            </div>
+            <div class="btn-center">
+              <button id="intro-btn"><a href="">Learn More</a></button>  
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div>
+              <h3>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+            </div>
+            <div class="btn-center">
+              <button id="intro-btn"><a href="">Learn More</a></button>  
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div>
+              <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi </h3>
+            </div>
+            <div class="btn-center">
+              <button id="intro-btn"><a href="">Learn More</a></button>  
+            </div>
+          </div>
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
         </div>
    </div>
-
+   <div class="jumbotron">
+       <h2>Small. Reliable. Secure.</h2>
+   </div>
+   <div class="card-section">
+      <div class="card">
+        <img src="https://res.cloudinary.com/dcczd9zz5/image/upload/v1567175521/Main_Banner_1920_b59vis.jpg" alt="Denim Jeans" style="width:100%; height: 300px;">
+          <h1>Small</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi </p>
+        </div> 
+        <div class="card">
+        <img src="https://res.cloudinary.com/dcczd9zz5/image/upload/v1567175521/Main_Banner_1920_b59vis.jpg" alt="Denim Jeans" style="width:100%; height: 300px;">
+          <h1>Reliable</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi </p>
+        </div> 
+        <div class="card">
+        <img src="https://res.cloudinary.com/dcczd9zz5/image/upload/v1567175521/Main_Banner_1920_b59vis.jpg" alt="Denim Jeans" style="width:100%; height: 300px;">
+          <h1>Secure</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi </p>
+        </div> 
+   </div>
+   <div class="end-sect">
+     <div>
+       <img src="https://res.cloudinary.com/dcczd9zz5/image/upload/v1567175521/Main_Banner_1920_b59vis.jpg" style="width: 100%;height: 500px;">
+     </div>
+     <div class="end-sect-end">
+       <h2>Pay your tax in a matter of minutes</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+       <button id="intro-btn"><a href="payment.html">Pay Now</a></button>
+     </div>
+   </div>
    <div class="footer-section">
        <div style="margin: 30px;">
            <div>
@@ -75,6 +147,27 @@
            <p>Copyright © 2019 Team Helsinki. All Rights Reserved | TaxIt.ng is a platform designed & developed by Team Helsinki.</p>
        </div>
    </div>
-   
+   <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change every 2 seconds
+}
+</script>
+
 </body>
 </html>

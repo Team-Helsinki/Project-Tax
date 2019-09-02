@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/Styles/calculatorStyles.css">
+    <title>Calculate Tax</title>
+</head>
+<body>
+    <div class="calculate">
+        <h2>Calculate Tax</h2>
+        <div class="form">
+            <div class="card space">
+                <label class="label">Status</label>
+                <select class="input"> 
+                    <option value="1">Corporate</option> 
+                    <option value="2">Individual</option> 
+                </select>
+            </div>
+
+                <div class="card space">
+                        <label class="label">Payment Month</label>
+                        <select class="input"> 
+                                <option value="sept">September</option> 
+                                <option value="oct">October</option> 
+                                <option value="nov">November</option> 
+                            </select>
+                        
+                    </div>
+                               
+                    <div class="card">
+                        <label class="label">Annual Income</label>
+                        <input type="text" class="input textinput income" name="income" 
+                        placeholder="Please, input your annual Income">
+                    </div>
+
+                    <div class="card">
+                        <label class="percent">Tax % to be paid</label>
+                        <!-- <input type="text" class="input textinput" name="income" 
+                        placeholder="Please, input your annual Income"> -->
+                    </div>
+                  
+                    <!-- <div class="card space">
+                            <label class="label">Income Band</label>
+                            <select class="input band"> 
+                                    <option value="A">10k - 50k : 5%</option> 
+                                    <option value="B">50k - 150k : 5.5%</option> 
+                                    <option value="C">150k - 500k : 6.0%</option>
+                                    <option value="D">500k - 2M : 10.0%</option>  
+                                </select>
+                            
+                        </div> -->
+
+                        <div class="btn" id="calculate">
+                            Calculate
+                    
+
+                        </div>
+
+                        <div class="card">
+                                <label class="label">Amount Due</label>
+                                <input type="text" class="input textinput" name="card_holder" 
+                                placeholder="Amount">
+                            </div>
+                            
+
+                            <div class="btn" id="submit">
+                                    Proceed to Payment
+        
+                                </div>
+
+        </div>
+
+        <script>
+            let income = document.querySelector(".income").value;
+            let percent = document.querySelector(".percent");
+            let due = document.querySelector("#calculate");
+
+            // due.addEventListener()
+
+            
+            let percentage = 0;
+            const getPercentage = (income) => {
+              
+              if(income <= 50000){
+                percentage = 5;
+                percent.innerHTML = percentage + "%";
+                percent.style.display = "inline";
+              }
+
+              if(income > 50000 &&  income <= 150000){
+                percentage = 5.5;
+                percent.innerHTML = percentage + "%";
+                percent.style.display = "inline";
+              }
+
+              if(income > 150000 &&  income <= 500000){
+                percentage = 6.0;
+                percent.innerHTML = percentage + "%";
+                percent.style.display = "inline";
+              }
+
+              if(income > 500000){
+                percentage = 10;
+                percent.innerHTML = percentage + "%";
+                percent.style.display = "inline";
+              }
+            }
+
+            income.addEventListener('input', getPercentage(income));
+
+            const calcTaxToBepaid = () => {
+            let amountDue = document.querySelector(".textInput");
+            let tax = 0;
+            if(selected === 0){
+              tax = selected.value * 5 /100;
+              amountDue.value = tax;
+            }
+
+            if(selected === 1){
+              tax = selected.value * 5.5 /100;
+              amountDue.value = tax;
+            }
+
+            if(selected === 1){
+              tax = selected.value * 6 /100;
+              amountDue.value = tax;
+            }
+
+            if(selected === 1){
+              tax = selected.value * 10 /100;
+              amountDue.value = tax;
+            }
+            }
+
+            console.log(tax);
+        </script>
+
+        <script type="text/javascript" src="http://flw-pms-dev.eu-west-1.elasticbeanstalk.com/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+        <!-- <script type="text/javascript" src="https://ravesandboxapi.flutterwave.com/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script> -->
+        
+      <script>
+           document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementById("submit").addEventListener("click", function(e) {
+          var PBFKey = "FLWPUBK_TEST-adc34bcd81cd2a3c566caa003ae499ab-X";
+          
+          getpaidSetup({
+          PBFPubKey: PBFKey,
+          customer_email: "user@example.com",
+          customer_firstname: "Temi",
+          customer_lastname: "Adelewa",
+          custom_description: "Pay Internet",
+          custom_logo: "http://localhost/communique-3/skin/frontend/ultimo/communique/custom/images/logo.svg",
+          custom_title: "Communique Global System",
+          amount: 2000,
+          customer_phone: "234099940409",
+          country: "NG",
+          currency: "NGN",
+          txref: "team.Helsinki",
+          integrity_hash: "6800d2dcbb7a91f5f9556e1b5820096d3d74ed4560343fc89b03a42701da4f30",
+          onclose: function() {},
+          callback: function(response) {
+            var flw_ref = response.tx.flwRef; // collect flwRef returned and pass to a 					server page to complete status check.
+            console.log("This is the response returned after a charge", response);
+            if (
+              response.tx.chargeResponseCode == "00" ||
+              response.tx.chargeResponseCode == "0"
+           ) {
+                // redirect to a success page
+              } else {
+                // redirect to a failure page.
+              }
+            }
+          });
+        });
+      });
+      </script>
+     
+</body>
+</html>
