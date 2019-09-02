@@ -133,3 +133,13 @@ a{
       width: 50%;
     }
   }
+
+  /*Image gallery*/
+  img {
+    width: 200px;
+  }
+
+  .gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
