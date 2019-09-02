@@ -96,7 +96,7 @@ a{
     justify-content: center;
     padding: 70px;
 }
-#intro-btn{
+.intro-btn{
   background-color: green;
   border-radius: 5px;
   padding: 10px;
