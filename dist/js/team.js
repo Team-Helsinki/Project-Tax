@@ -304,7 +304,14 @@ const members = [
     name: "Okenwa Franklyn",
     role: "Mobile", 
     image: "https://res.cloudinary.com/franklyno/image/upload/v1566672417/franklyn_s7qnb5.jpg"
+  },
+  {
+    id: "shn01549",
+    name: "Jimoh Lukman Adeyemi",
+    role: "Frontend", 
+    image: "https://res.cloudinary.com/dtb97frbc/image/upload/v1566530667/samples/myimages/IMG_20180403_112143_wulhni.jpg"
   }
+  
 ]
 
 function createImage(member){
