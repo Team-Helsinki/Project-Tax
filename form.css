@@ -1,0 +1,60 @@
+.form-container{
+	display: flex;
+}
+.signup{
+	padding: 50px;
+}
+.signup-form{
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		line-height: 30px;
+}
+legend{
+	padding: 40px;
+}
+input[type=text], input[type=password], input[type=email], input[type=tel]{
+	width: 90%;
+	padding:12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+input[type=checkbox]{
+	margin-left: 100px;
+	margin-right: 10px;
+}
+.aside{
+	background-image: url(bg.png);
+	background-size: cover;
+	background-position: center;
+/*	background-color:#0009;*/
+	width: 80%;
+}
+.aside > img{
+	border-radius: 20px;
+	bottom: 50%;
+}
+fieldset{
+	border: none;
+}
+.align-center{
+	text-align: center;
+	color: blue;
+}
+.btn-in{
+	width: 200px;
+	margin-top: 20px;
+	margin-left: 100px;
+	background-color: blue;
+	border:none;
+	padding:15px 40px;
+	text-align: center;
+	display: inline-block;
+}
+.btn-in a{
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+}
