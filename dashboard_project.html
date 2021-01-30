@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dasboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="dashboard-style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <a id="class">
+      <nav>
+        <ul class="menu">
+          <li class="logo">
+            <a href="#"><b>TaxItNG</b> </a>
+          </li>
+        </ul>
+        <ul class="pull-right">
+          <li class="dropdown">
+            <a href="#">Oladapo</a>
+            <div class="dropdown-content">
+              <ul>
+                <li>Setting</li>
+                <li>Logout</li>
+              </ul>
+            </div>
+          </li>
+          <li class="toggle">
+            <a href="#"><i class="fas fa-bars"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </a>
+    <div class="main flex-container">
+      <aside>
+        <h3>Dashboard</h3>
+        <section>
+          <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Payment</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </section>
+      </aside>
+      <main id="Dasboard">
+        <header>
+          <h2>Fund Projects</h2>
+        </header>
+
+        <section>
+          <p>
+            <center>Below is a list of 5 Major Projects that can be funded using your tax payment, please click on each of them for more information
+            </center><br>
+          </p>
+
+    <!-- Project Accordion Starts Here -->
+    <ul class="a-container">
+      
+        <!-- Project01 -->
+        <li class="a-items">
+        <input type="radio" name="ac" id="a1" />
+        <label for="a1">PROJECT 1: ELEME CRUDE OIL REFINERY</label>
+        <div class="a-content">
+        <h2>ELEME CRUDE OIL REFINERY</h2>
+        <p>By funding this project you are helping with the development of information technology in our communities. The world is a global village. Plans are set out to train and equip people in our communities to get the knowledge and help transform their immediate communities.
+                  <!-- Select Project based on State and Local Government -->
+      <form id="myForm">
+
+         <p>
+          Select The State You want to Fund
+          <select id="pickup_place" name="pickup_place">
+          <option value="" selected="selected">Select One</option>
+          <option value="" >Lagos</option>
+          <option value="" >Abuja</option>
+          <option value="" >Taraba</option>
+          <option value="" >Anambra</option>
+          <option value="" >Port Harcourt</option>
+
+          </select>
+           
+        </p>
+
+        <p>
+          Select The Local Government You want to fund
+          <select id="pickup_place" name="pickup_place">
+          <option value="" selected="selected">Select One</option>
+          <option value="" >Okota</option>
+          <option value="" >Kubwa</option>
+          <option value="" >Jalingo</option>
+          <option value="" >Njikoka</option>
+          <option value="" >Ikwerre</option>
+          </select>
+           
+        </p>
+
+
+        <p>
+          Drop Suggestions
+          <textarea name="comments" maxlength="500"></textarea>
+          
+        </p>
+
+        <p><button><a href="#" onclick="show('popup1')">Fund This Project</a></button>
+          <div class="popup" id="popup1">
+          <p><b>Thank You very much!</b></p>
+          <p><b>This Project is now 20% Funded!</b></p>
+          <a href="#" onclick="hide('popup1')"><b>Ok!</b></a>
+          </div>
+        </p>
+
+      </form>
+        </p>
+        </div>
+        </li>
+  
+        <!-- Project02 -->
+        <li class="a-items">
+        <input type="radio" name="ac" id="a2" />
+        <label for="a2">Project 2</label>
+        <div class="a-content">
+        <h2>Tertiary Education Project</h2>
+        <p>Funds pushed to this project will help in providering facilties for our tertiary instutitions. 
+                    <!-- Select Project based on State and Local Government -->
+      <form id="myForm">
+
+         <p>
+          Select The State You want to Fund
+          <select id="pickup_place" name="pickup_place">
+          <option value="" selected="selected">Select One</option>
+          <option value="" >Lagos</option>
+          <option value="" >Abuja</option>
+          <option value="" >Taraba</option>
+          <option value="" >Anambra</option>
+          <option value="" >Port Harcourt</option>
+
+          </select>
+           
+        </p>
+
+        <p>
+          Select The Local Government You want to fund
+          <select id="pickup_place" name="pickup_place">
+          <option value="" selected="selected">Select One</option>
+          <option value="" >Okota</option>
+          <option value="" >Kubwa</option>
+          <option value="" >Jalingo</option>
+          <option value="" >Njikoka</option>
+          <option value="" >Ikwerre</option>
+          </select>
+           
+        </p>
+
+
+        <p>
+          Drop Suggestions
+          <textarea name="comments" maxlength="500"></textarea>
+          
+        </p>
+
+          <p><button><a href="#" onclick="show('popup2')">Fund This Project</a></button>
+          <div class="popup" id="popup2">
+          <p><b>Thank You very much!</b></p>
+          <p><b>This Project is now 20% Funded!</b></p>
+          <a href="#" onclick="hide('popup2')"><b>Ok!</b></a>
+          </div>
+        </p>
+
+      </form>
+        </p>
+        </div>
+        </li>
+  
+        <!-- Project03 -->  
+        <li class="a-items">
+        <input type="radio" name="ac" id="a3" />
+        <label for="a3">Project 3</label>
+        <div class="a-content">
+        <h2>Universal Basic Education Dvelopment</h2>
+        <p>Most of our government schools are in bad shape. With this fund, we can build classrooms and provide desk to students.
+                  <!-- Select Project based on State and Local Government -->
+      <form id="myForm">
+
+         <p>
+          Select The State You want to Fund
+          <select id="pickup_place" name="pickup_place">
+          <option value="" selected="selected">Select One</option>
+          <option value="" >Lagos</option>
+          <option value="" >Abuja</option>
+          <option value="" >Taraba</option>
+          <option value="" >Anambra</option>
+          <option value="" >Port Harcourt</option>
+
+          </select>
+           
+        </p>
+
+        <p>
+          Select The Local Government You want to fund
+          <select id="pickup_place" name="pickup_place">
+          <option value="" selected="selected">Select One</option>
+          <option value="" >Okota</option>
+          <option value="" >Kubwa</option>
+          <option value="" >Jalingo</option>
+          <option value="" >Njikoka</option>
+          <option value="" >Ikwerre</option>
+          </select>
+           
+        </p>
+
+
+        <p>
+          Drop Suggestions
+          <textarea name="comments" maxlength="500"></textarea>
+          
+        </p>
+
+        <p><button><a href="#" onclick="show('popup3')">Fund This Project</a></button>
+          <div class="popup" id="popup3">
+          <p><b>Thank You very much!</b></p>
+          <p><b>This Project is now 20% Funded!</b></p>
+          <a href="#" onclick="hide('popup3')"><b>Ok!</b></a>
+          </div>
+        </p>
+
+      </form>
+        </p>
+        </div>
+        </li>
+
+
+        <!-- Project04 -->
+        <li class="a-items">
+        <input type="radio" name="ac" id="a4" />
+        <label for="a4">Project 4</label>
+        <div class="a-content">
+        <h2>Rural Electrification Project</h2>
+        <p>This project will help provide maximum electricity to towns and cities in Nigeria.
+
+
+                <!-- Select Project based on State and Local Government -->
+      <form id="myForm">
+
+         <p>
+          Select The State You want to Fund
+          <select id="pickup_place" name="pickup_place">
+          <option value="" selected="selected">Select One</option>
+          <option value="" >Lagos</option>
+          <option value="" >Abuja</option>
+          <option value="" >Taraba</option>
+          <option value="" >Anambra</option>
+          <option value="" >Port Harcourt</option>
+
+          </select>
+           
+        </p>
+
+        <p>
+          Select The Local Government You want to fund
+          <select id="pickup_place" name="pickup_place">
+          <option value="" selected="selected">Select One</option>
+          <option value="" >Okota</option>
+          <option value="" >Kubwa</option>
+          <option value="" >Jalingo</option>
+          <option value="" >Njikoka</option>
+          <option value="" >Ikwerre</option>
+          </select>
+           
+        </p>
+
+
+        <p>
+          Drop Suggestions
+          <textarea name="comments" maxlength="500"></textarea>
+          
+        </p>
+
+          <p><button><a href="#" onclick="show('popup4')">Fund This Project</a></button>
+          <div class="popup" id="popup4">
+          <p><b>Thank You very much!</b></p>
+          <p><b>This Project is now 20% Funded!</b></p>
+          <a href="#" onclick="hide('popup4')"><b>Ok!</b></a>
+          </div>
+        </p>
+
+      </form>
+        </p>
+        </div>
+        </li>
+
+        <!-- Project05 -->
+        <li class="a-items">
+        <input type="radio" name="ac" id="a5" />
+        <label for="a5">PROJECT 5: FARMit – MINISTRY OF AGRICULTURE</label>
+        <div class="a-content">
+        <h2>FARMit – MINISTRY OF AGRICULTURE</h2>
+        <p>Fund this project to help farmers in rural areas get funding for land, mechanized tools, fertilizers, etc.
+
+      <!-- Select Project based on State and Local Government -->
+      <form id="myForm">
+
+         <p>
+          Select The State You want to Fund
+          <select id="pickup_place" name="pickup_place">
+          <option value="" selected="selected">Select One</option>
+          <option value="" >Lagos</option>
+          <option value="" >Abuja</option>
+          <option value="" >Taraba</option>
+          <option value="" >Anambra</option>
+          <option value="" >Port Harcourt</option>
+
+          </select>
+           
+        </p>
+
+        <p>
+          Select The Local Government You want to fund
+          <select id="pickup_place" name="pickup_place">
+          <option value="" selected="selected">Select One</option>
+          <option value="" >Okota</option>
+          <option value="" >Kubwa</option>
+          <option value="" >Jalingo</option>
+          <option value="" >Njikoka</option>
+          <option value="" >Ikwerre</option>
+          </select>
+           
+        </p>
+
+
+        <p>
+          Drop Suggestions
+          <textarea name="comments" maxlength="500"></textarea>
+          
+        </p>
+
+        <p><button><a href="#" onclick="show('popup5')">Fund This Project</a></button>
+          <div class="popup" id="popup5">
+          <p><b>Thank You very much!</b></p>
+          <p><b>This Project is now 20% Funded!</b></p>
+          <a href="#" onclick="hide('popup5')"><b>Ok!</b></a>
+          </div>
+        </p>
+
+      </form>
+
+
+        </p>
+        </div>
+        </li>
+    </ul>
+
+    <!-- Project Accordion Ends Here -->
+
+
+
+
+          
+        </section>
+      </main>
+    </div>
+
+
+  <script type="text/javascript">
+  
+      $ = function(id) {
+      return document.getElementById(id);
+    }
+
+    var show = function(id) {
+      $(id).style.display ='block';
+    }
+    var hide = function(id) {
+      $(id).style.display ='none';
+    }
+
+  </script>
+
+  </body>
+</html>
